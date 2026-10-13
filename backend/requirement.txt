@@ -1,0 +1,12 @@
+sentence-transformers
+transformers
+qdrant-client 
+datasets
+dotenv
+fastapi
+pydantic
+python-dotenv
+uvicorn
+numpy
+requests
+pillow

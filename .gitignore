@@ -1,0 +1,12 @@
+# .gitignore
+.env
+.env.local
+.env.*.local
+__pycache__/
+*.pyc
+.DS_Store
+vector_env/
+logs/*.log
+.claude/
+.ipynb_checkpoints/
+CLAUDE.md
