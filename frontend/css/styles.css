@@ -104,6 +104,20 @@ h1 {
 }
 .chip:hover { border-color: var(--accent); color: var(--accent); }
 
+/* Filters: Near me on the left, Rating on the right; stacks on narrow screens */
+.filters {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 32px;
+}
+/* Equal columns that may shrink, so the pair stays on one line until the phone breakpoint */
+.filter-group { flex: 1 1 0; min-width: 0; }
+.filter-group .slider-wrap { min-width: 0; flex: 1 1 120px; max-width: 240px; gap: 10px; }
+.filter-group .rating-value { min-width: 70px; padding: 8px 10px; }
+@media (max-width: 640px) {
+  .filters { flex-direction: column; gap: 0; }
+}
+
 /* Rating filter */
 .rating-row {
   display: flex;

@@ -4,7 +4,7 @@ An AI agent that finds the food and dishes you are craving. Search is vector bas
 
 <!-- Replace the placeholder below with your own recording, e.g. docs/demo.gif -->
 ![Food Discovery demo](https://placehold.co/900x500/gif?text=Demo+GIF+coming+soon)
-
+images\Complete_view.png
 ## Dataset
 
 The data comes from the Hugging Face dataset

@@ -22,29 +22,35 @@
     <p class="label">Example searches</p>
     <div id="examples" class="chips"></div>
 
-    <p class="label">Rating</p>
-    <div class="rating-row">
-      <label id="rating-toggle" class="toggle">
-        <input id="rating-enabled" type="checkbox"> Minimum rating
-      </label>
-      <div class="slider-wrap">
-        <input id="rating" type="range" min="0" max="10" step="0.5" value="7" disabled aria-label="Minimum rating">
-        <span id="rating-value" class="rating-value">Any</span>
+    <div class="filters">
+      <div class="filter-group">
+        <p class="label">Near</p>
+        <div class="near-row">
+          <div class="location-chips">
+            <button id="loc-anywhere" class="chip active" type="button">Anywhere</button>
+            <button id="loc-near" class="chip" type="button">&#128205; Near me</button>
+          </div>
+          <select id="radius" class="radius-select" aria-label="Search radius" hidden>
+            <option value="10">within 10 km</option>
+            <option value="25">within 25 km</option>
+            <option value="50">within 50 km</option>
+          </select>
+          <span id="near-status" class="near-status"></span>
+        </div>
       </div>
-    </div>
 
-    <p class="label">Near</p>
-    <div class="near-row">
-      <div class="location-chips">
-        <button id="loc-anywhere" class="chip active" type="button">Anywhere</button>
-        <button id="loc-near" class="chip" type="button">&#128205; Near me</button>
+      <div class="filter-group">
+        <p class="label">Rating</p>
+        <div class="rating-row">
+          <label id="rating-toggle" class="toggle">
+            <input id="rating-enabled" type="checkbox"> Minimum rating
+          </label>
+          <div class="slider-wrap">
+            <input id="rating" type="range" min="0" max="10" step="0.5" value="7" disabled aria-label="Minimum rating">
+            <span id="rating-value" class="rating-value">Any</span>
+          </div>
+        </div>
       </div>
-      <select id="radius" class="radius-select" aria-label="Search radius" hidden>
-        <option value="10">within 10 km</option>
-        <option value="25">within 25 km</option>
-        <option value="50">within 50 km</option>
-      </select>
-      <span id="near-status" class="near-status"></span>
     </div>
 
     <div id="map" role="application" aria-label="Map of where dishes are available. Click to search near a spot"></div>
