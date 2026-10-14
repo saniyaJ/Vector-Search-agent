@@ -2,9 +2,8 @@
 
 An AI agent that finds the food and dishes you are craving. Search is vector based: your text is matched against dish descriptions by meaning, not by keywords, and the data also carries CLIP vectors so text and image similarity live in the same space.
 
-<!-- Replace the placeholder below with your own recording, e.g. docs/demo.gif -->
-![Food Discovery demo](https://placehold.co/900x500/gif?text=Demo+GIF+coming+soon)
-images\Complete_view.png
+![Food Discovery complete view](images/Complete_view.png)
+
 ## Dataset
 
 The data comes from the Hugging Face dataset
